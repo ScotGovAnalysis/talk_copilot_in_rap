@@ -5,5 +5,4 @@ This project contains slides for a talk delivered in the AI use case series for 
 ## Key files
 
 -   talk_copilot_in_rap.qmd: The quarto file for creating the slides
--   talk_copilot_in_rap.html: The presentation slides
--   talk_copilot_in_rap.pdf: The html files saved as a pdf
+-   Using Copilot to Support Reproducible Analysis.pdf: A pdf version of the locally rendered html
