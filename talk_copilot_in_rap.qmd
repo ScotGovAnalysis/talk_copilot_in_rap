@@ -32,16 +32,16 @@ Project should:
 
 ## The context {.smaller}
 
-Analysis of a large systems map using RAP ![](map.png){height="500"}
+Analysis of a large systems map using RAP ![](map.png){height=500 alt="A large causal loop network diagram showing relationships between factors in the system"}
 
 ## Copilot in analysis
 
 | RAP          |                                  Copilot |
 |--------------|-----------------------------------------:|
-| reproducible | [X]{style="color:blue; font-weight:800"} |
-| auditable    | [X]{style="color:blue; font-weight:800"} |
-| efficient    | [Y]{style="color:blue; font-weight:800"} |
-| high quality | [?]{style="color:blue; font-weight:800"} |
+| reproducible | [X]{style="color:#55a8f2; font-weight:500"} |
+| auditable    | [X]{style="color:#55a8f2; font-weight:500"} |
+| efficient    | [Y]{style="color:#002d54; font-weight:500"} |
+| high quality | [?]{style="color:#55a8f2; font-weight:500"} |
 
 ## The instruction document {.smaller}
 
@@ -55,13 +55,13 @@ Start with the **instruction document**:
 ## The instruction document - sections {.smaller}
 
 ::: incremental
--   Instructions: <span style="color:#536878;">\"I am conducting ...Please treat this document as the authoritative brief. Before undertaking analysis:</span>
+-   Instructions: ["I am conducting ...Please treat this document as the authoritative brief. Before undertaking analysis:]{style="color:#536878;"}
 
     ::: nonincremental
-    1.  <span style="color:#536878;">Read every file attached with this prompt.</span>
-    2.  <span style="color:#536878;">Record all interpretive decisions in an auditable decision log.</span>
-    3.  <span style="color:#536878;">Complete only the phase I explicitly authorise. Do not move to later phases without discussion.</span>
-    4.  <span style="color:#536878;">...\"<span style="color:#536878;">
+    1.  [Read every file attached with this prompt.]{style="color:#536878;"}
+    2.  [Record all interpretive decisions in an auditable decision log.]{style="color:#536878;"}
+    3.  [Complete only the phase I explicitly authorise. Do not move to later phases without discussion.]{style="color:#536878;"}
+    4.  <span style="color:#536878;">..."<span style="color:#536878;">
     :::
 
 -   Files to attach
@@ -75,9 +75,9 @@ Start with the **instruction document**:
 
 ## Initial prompt {.smaller}
 
--   <span style="color:#536878;">"See attached. Please await additional files and instructions"</span>
+-   ["See attached. Please await additional files and instructions"]{style="color:#536878;"}
 -   Upload the instruction document and up to a total of three files. Keep uploading relevant files in subsequent prompts
--   <span style="color:#536878;">"I have now uploaded all the files. Do you need clarifications before proceeding with the analysis?"</span>
+-   ["I have now uploaded all the files. Do you need clarifications before proceeding with the analysis?"]{style="color:#536878;"}
 
 ::: fragment
 **What if the clarifications change the analysis?**
@@ -88,7 +88,7 @@ Start with the **instruction document**:
 ### AI generated analysis instructions
 
 ::: incremental
--   <span style="color:#536878;">"Please provide a single file that can act as a prompt to enable a new instance of copilot to proceed with all subsequent steps of the analysis. The file should be in Markdown format and follow the structure of \<instruction document.md\>"</span>
+-   ["Please provide a single file that can act as a prompt to enable a new instance of copilot to proceed with all subsequent steps of the analysis. The file should be in Markdown format and follow the structure of \<instruction document.md\>"]{style="color:#536878;"}
 -   Add file to the project/replace original instruction document
 -   Review and version control
 :::
@@ -96,28 +96,28 @@ Start with the **instruction document**:
 ## Recording the analytical process {.smaller}
 
 ::: incremental
--   Save conversation history: <span style="color:#536878;">"Produce a single markdown file that records the conversation in terms of my prompts, and your text responses, from either the start of the conversation, or the last time that I prompted you to save the conversation. If files were produced or uploaded in the conversation, these should be named in the markdown file, but do not need to be hyperlinked. Please save the markdown file named with the date and time of the first and last prompts saved in the file."</span>
--   Alternatively a summary: <span style="color:#536878;">"Please provide a single downloadable markdown file that summarises the analysis that you conducted to produce the <X output>. Please name all input files used and output files produced." </span>
--   All saved conversations saved in dedicated project folder
+-   Save conversation history: ["Produce a single markdown file that records the conversation in terms of my prompts, and your text responses, from either the start of the conversation, or the last time that I prompted you to save the conversation. If files were produced or uploaded in the conversation, these should be named in the markdown file, but do not need to be hyperlinked. Please save the markdown file named with the date and time of the first and last prompts saved in the file."]{style="color:#536878;"}
+-   Alternatively a summary: ["Please provide a single downloadable markdown file that summarises the analysis that you conducted to produce the <X output>. Please name all input files used and output files produced." ]{style="color:#536878;"}
+-   Files saved in dedicated project folder - version controlled
 :::
 
 ## Copilot in analysis - auditable
 
 | RAP          |                                  Copilot |
 |--------------|-----------------------------------------:|
-| reproducible | [X]{style="color:blue; font-weight:800"} |
-| auditable    | [Y]{style="color:cyan; font-weight:800"} |
-| efficient    | [Y]{style="color:blue; font-weight:800"} |
-| high quality | [?]{style="color:blue; font-weight:800"} |
+| reproducible | [X]{style="color:#55a8f2; font-weight:500"} |
+| auditable    | [Y]{style="color:#002d54; font-weight:900"} |
+| efficient    | [Y]{style="color:#002d54; font-weight:500"} |
+| high quality | [?]{style="color:#55a8f2; font-weight:500"} |
 
 ## Reproduciblity + Quality {.smaller}
 
 ::: incremental
--   <span style="color:#536878;">"Any code that you use to produce analytical outputs should be saved to Onedrive with a comment in the code specifying the name of the output file it produces.</span>
+-   ["Any code that you use to produce analytical outputs should be saved to Onedrive with a comment in the code specifying the name of the output file it produces.]{style="color:#536878;"}
 
--   <span style="color:#536878;">Code should be well-commented code and have documentation embedded to enable a programmer with a strong foundation in R or Python to understand the code.</span>
+-   [Code should be well-commented code and have documentation embedded to enable a programmer with a strong foundation in R or Python to understand the code.]{style="color:#536878;"}
 
--   <span style="color:#536878;">R code should follow the tidyverse styleguide."</span>
+-   [R code should follow the tidyverse styleguide."]{style="color:#536878;"}
 
 -   But validation and verification are your responsibility
 :::
@@ -126,10 +126,10 @@ Start with the **instruction document**:
 
 | RAP          |                                  Copilot |
 |--------------|-----------------------------------------:|
-| reproducible | [Y]{style="color:cyan; font-weight:800"} |
-| auditable    | [Y]{style="color:cyan; font-weight:800"} |
-| efficient    | [Y]{style="color:blue; font-weight:800"} |
-| high quality | [Y]{style="color:cyan; font-weight:800"} |
+| reproducible | [Y]{style="color:#002d54; font-weight:900"} |
+| auditable    | [Y]{style="color:#002d54; font-weight:900"} |
+| efficient    | [Y]{style="color:#002d54; font-weight:500"} |
+| high quality | [Y]{style="color:#002d54; font-weight:900"} |
 
 ## RAP principles {.smaller}
 
@@ -157,12 +157,12 @@ Project should:
 ## Personalisation {.smaller}
 
 -   Specify coding preferences (language, style, comments)
--   <span style="color:#536878;">"When I prompt \"save conversation\" (case insensitive), you should produce a single markdown file that records the conversation in terms of my prompts, and your text responses, from either the start of the conversation, or the last time that I prompted \"save conversation\". If files were produced or uploaded in the conversation, these should be named in the markdown file, but do not need to be hyperlinked. Please save the markdown file to my OneDrive named with the date and time of the first and last prompts saved in the file."</span>
+-   ["When I prompt "save conversation" (case insensitive), you should produce a single markdown file that records the conversation in terms of my prompts, and your text responses, from either the start of the conversation, or the last time that I prompted "save conversation". If files were produced or uploaded in the conversation, these should be named in the markdown file, but do not need to be hyperlinked. Please save the markdown file to my OneDrive named with the date and time of the first and last prompts saved in the file."]{style="color:#536878;"}
 
 ## Harms and risks {.smaller}
 
 ::: incremental
--   Agent based AI has a higher energy demands than chatbots (\~100x)... **"Do I need to use AI for this analysis?"**
+-   Agent based AI has a higher energy demands than chatbots (\~100 -- 1000x)... **"Do I need to use AI for this analysis?"**
 -   Each summary/saving request also has (small) environmental footprint (\~0.3 Wh)
 -   Assurance of code is your responsibility. Copilot can misinterpet specification.
 :::
@@ -170,5 +170,5 @@ Project should:
 # 
 
 ::: r-stack
-**Thoughts, Questions, Discussion**
+**Thoughts, Questions, Comments**
 :::
